@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- <html>: Defines the root of an HTML document. -->
+<html lang="en">
+  <!-- <head>: Contains meta-information about the document. -->
+  <head>
+    <meta charset="utf-8" />
+    <!-- <title>: Sets the title of the document. -->
+    <title>Study Notes</title>
+    <!-- style: Adds inline styles to an element. -->
+    <style>
+      body {
+        /* background-image: Sets the background image for an element. */
+        background-image: url(images/blackgoose.png);
+      }
+
+      p {
+        /* color: Sets the color of text. */
+        color: brown;
+        /* font-size: Sets the size of the font. 1em = 16px */
+        font-size: 1em;
+        /* font-family: Sets the font family. */
+        font-family: "Times New Roman", Times, serif;
+        /* font-weight: Sets the weight (boldness) of the font. */
+        font-weight: 600;
+        /* text-align: Sets the horizontal alignment of text. */
+        text-align: center;
+        /* text-decoration: Adds decoration to text (underline, overline, etc.). */
+        text-decoration: underline;
+      }
+
+      div {
+        /* background-color: Sets the background color of an element. */
+        background-color: aqua;
+        /* margin: Sets the outer margin of an element. */
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      ol {
+        margin: 35px;
+        /* border: Sets the border around an element. */
+        border: 25px;
+        /* padding: Sets the inner padding of an element. */
+        padding: 30px;
+        /* width: Sets the width of an element. */
+        width: 25px;
+        /* height: Sets the height of an element.*/
+        height: 30px;
+      }
+
+      li {
+        /* display: Specifies the display behavior of an element (block, inline, none, etc.). */
+        display: block;
+      }
+
+      div.static {
+        /* position: Specifies the positioning method of an element (static, relative, absolute, fixed). */
+        position: static;
+        border: 3px solid #73ad21;
+      }
+
+      div.relative {
+        position: relative;
+        left: 30px;
+        border: 3px solid #73ad21;
+      }
+
+      img {
+        /* float: Specifies whether an element should float to the left, right, or not at all. */
+        float: right;
+      }
+    </style>
+    <nav>
+      <!-- <ul>: Defines an unordered list. -->
+      <ul>
+        <!-- <a>: Defines a hyperlink. -->
+        <!-- href: Specifies the URL of a link. -->
+        <li><a href="study.html">Home</a></li>
+      </ul>
+    </nav>
+  </head>
+  <!-- <body>: Defines the body of the document. -->
+  <body>
+    <!-- <h1> to <h6>: Define HTML headings. -->
+    <h1>Header 1</h1>
+    <header>
+      <h2>Header 2</h2>
+    </header>
+    <!-- <div>: Defines a division or section. -->
+    <!-- id: Assigns a unique identifier to an element. -->
+    <!-- class: Assigns a class name to an element. -->
+    <div id="intro" class="personal">
+      <h3>Header 3</h3>
+      <!-- <p>: Defines a paragraph. -->
+      <p>
+        Paragraph inside a "div" element.<br />
+        This sentence should appear on the next line.
+      </p>
+      <!-- <img>: Embeds an image. -->
+      <!-- src: Specifies the URL of an image. -->
+      <!-- alt: Provides alternative text for an image. -->
+      <img src="fruits.jpg" alt="Picture of Fruits" />
+    </div>
+    <!-- <span>: Used to group inline-elements in a document. -->
+    <p>Paragraph of the <span>"body"</span> element.</p>
+    <!-- <ol>: Defines an ordered list. -->
+    <ol>
+      <!-- <li>: Defines a list item. -->
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <!-- type: Specifies the type of an input element. -->
+        <input type="text" name="customername" />
+      </li>
+      <li>
+        <label for="phone">Telephone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="telephone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        />
+      </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </li>
+      <div class="static">
+        <p>Hello</p>
+      </div>
+      <div class="relative">
+        <p>World</p>
+      </div>
+    </ul>
+    <table>
+      <th>First</th>
+      <th>Middle</th>
+      <th>Last</th>
+
+      <tr>
+        <td>John</td>
+        <td>Smith</td>
+        <td>Doe</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Julie</td>
+        <td>Doe</td>
+      </tr>
+      <tr>
+        <td>Jake</td>
+        <td>Bruce</td>
+        <td>Doe</td>
+      </tr>
+    </table>
+  </body>
+</html>
